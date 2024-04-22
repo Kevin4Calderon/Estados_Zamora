@@ -3,18 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estados</title>
+    <title>Busqueda en Amplitud "Estados"</title>
 </head>
 <body>
 
 <h1>Estados</h1>
 
-<button onclick="mostrarEstados()">Mostrar Estados</button>
+<button onclick="mostrarEstados()">Iniciar Busqueda</button>
+
+<p id="resultado"></p>
 
 <script>
 function mostrarEstados() {
-    var estados = "Edo.Mex, Sonora, Hidalgo";
-    alert(estados);
+    var estados = "[Edo.Mex, Sonora, Hidalgo]";
+    document.getElementById("resultado").innerText = estados;
 }
 </script>
 
